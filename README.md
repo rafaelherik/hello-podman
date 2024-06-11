@@ -44,4 +44,4 @@ the result:
 🍺  podman-desktop was successfully installed!
 ```
 
-![Alt text](image.png)
+![Alt text](assets/image.png)
