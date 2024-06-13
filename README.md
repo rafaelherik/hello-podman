@@ -45,3 +45,39 @@ the result:
 ```
 
 ![Alt text](assets/image.png)
+
+
+## Running a container
+
+###  Adding a registry
+
+This step is not required to run a container, but if you want to use images from the Docker Hub or use any other container registry, you must authenticate your podman desktop.
+
+First go to the Settigns Menu:
+
+![Settings](assets/settings-screen.png)
+
+
+Then go to Registries:
+
+![Settings > Registries](assets/registries-screen.png)
+
+On Registries you can authenticate to one of the available options, or use the button Add registry to add a custom container registry.
+
+
+
+### Running a container using an image from docker hub
+
+Podman is very similar to docker, the command line syntax is basically the same, you only need to replace docker for podman, see:
+
+```
+podman run -d -p 80:80 docker.io/library/nginx
+
+```
+
+![Alt text](assets/terminal-screen.png)
+
+
+After running the container, is possible to see the container running using ``` podman ps``` command. Accessing the address ```localhost:8080 ``` :
+
+![Alt text](assets/browser-window.png)
